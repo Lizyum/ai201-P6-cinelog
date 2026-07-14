@@ -12,8 +12,8 @@
 **How I verified:** I prompted Claude to explain how the function add_to_watchlist handles duplicate entries and to raise any inconsistencies / break in logic that it finds.
 
 ## Comment 3 — Missing test
-**What I did:**
-**How I verified:**
+**What I did:** I utilized Claude to understand the structure of the test_collection.py file. This helped me better understand what I needed to follow the same pattern with new tests for test_watchlist.py.
+**How I verified:** I ran the full test suite and verified that nothing is broken and the new test is passing.
 
 ## Comment 4 — Default visibility
 **My position:**
