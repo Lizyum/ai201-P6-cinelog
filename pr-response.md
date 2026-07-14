@@ -16,14 +16,14 @@
 **How I verified:** I ran the full test suite and verified that nothing is broken and the new test is passing.
 
 ## Comment 4 — Default visibility
-**My position:**
-**Reasoning:**
-**Tradeoff acknowledged:**
+**My position:** Default visibility should be public
+**Reasoning:** CineLog's main purpose is to serve as a community film tracking app. In order to stay true to the main intent of the app and allow users to connect with their communities seamlessly, a public default for collections will help accomplish this.
+**Tradeoff acknowledged:** Users who intend to use the app for personal tracking and want to protect their privacy will have to do more work to accomplish this (toggle visibility).
 
 ## Comment 5 — Sort order
-**My position:**
-**Reasoning:**
-**Engagement with reviewer's point:**
+**My position:** I prefer to sort the films by the date they were added to the watchlist collection
+**Reasoning:** Users would benefit from tracking the films they added to their watchlist in chronological order as it stays true to the timeline of when they came across the film and decided to track it for a future watch.
+**Engagement with reviewer's point:** I agree that users may want to see what they added most recently, especially if they decide to undo an addition immediately-- a chronological sorting of added films makes it much easier to undo mistakes.
 
 ## Comment 6 — Rebase
 **What conflicted:**
