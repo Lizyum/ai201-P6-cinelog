@@ -22,8 +22,8 @@
 
 ## Comment 5 — Sort order
 **My position:** I prefer to sort the films by the date they were added to the watchlist collection
-**Reasoning:** Users would benefit from tracking the films they added to their watchlist in chronological order as it stays true to the timeline of when they came across the film and decided to track it for a future watch.
-**Engagement with reviewer's point:** I agree that users may want to see what they added most recently, especially if they decide to undo an addition immediately-- a chronological sorting of added films makes it much easier to undo mistakes.
+**Reasoning:** I agree with the reviewer's point that users expect this default sorting, and I would also like to add that this expectation may stem from the fact that this default matches conventions users already know from other apps. Thus, this default would have the lowest friction for adoption as it will seem familiar to users.
+**Engagement with reviewer's point:** The reviewer makes a strong point — reverse-chronological is the convention users already expect from apps like Letterboxd and Netflix queues, and fighting that convention has a real usability cost.
 
 ## Comment 6 — Rebase
 **What conflicted:**
