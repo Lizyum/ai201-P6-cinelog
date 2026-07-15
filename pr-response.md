@@ -70,6 +70,10 @@ After the rebase completed, I verified the repository state by:
 - Running `git log --oneline` to confirm that all feature branch commits had been replayed on top of `main`.
 - Confirming the history contained no merge commits, indicating the rebase completed successfully.
 
+## Commit History
+
+![Commit History](commit-history.png)
+
 ## PR Description
 
 ### Overview
