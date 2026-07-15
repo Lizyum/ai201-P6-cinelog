@@ -26,9 +26,49 @@
 **Engagement with reviewer's point:** The reviewer makes a strong point — reverse-chronological is the convention users already expect from apps like Letterboxd and Netflix queues, and fighting that convention has a real usability cost.
 
 ## Comment 6 — Rebase
-**What conflicted:**
-**How I resolved it:**
-**How I verified no conflict remains:**
+**What conflicted:** 
+
+***`.gitignore`***
+
+- `main` added a new `.gitignore` in **PR #2** (`chore: add .gitignore for generated files`).
+- My `feature/watchlist` branch also contained changes to `.gitignore`.
+- During the rebase, Git could not automatically merge both sets of edits because they modified the same file.
+
+***`models.py` (non-conflict gap)***
+
+- `main`'s UUID refactor rewrote `models.py`, but the `WatchlistEntry` model was not present in the rebased version.
+- Since none of my commits explicitly added `WatchlistEntry` as a diff, Git had no conflict to report—it was silently omitted after the rebase.
+
+**How I resolved it:** 
+
+For `.gitignore`:
+
+- Reviewed the conflict markers.
+- Manually merged the file by keeping both sets of changes.
+
+For `models.py`:
+
+- Re-added the `WatchlistEntry` model manually.
+- Updated `film_id` from `db.Integer` to `db.String(36)` to match `main`'s UUID migration.
+- Staged the file:
+
+```bash
+git add models.py
+```
+
+- Continued the rebase:
+
+```bash
+git rebase --continue
+```
+
+**How I verified no conflict remains:** 
+
+After the rebase completed, I verified the repository state by:
+
+- Running `git status`, which reported a clean working tree.
+- Running `git log --oneline` to confirm that all feature branch commits had been replayed on top of `main`.
+- Confirming the history contained no merge commits, indicating the rebase completed successfully.
 
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
